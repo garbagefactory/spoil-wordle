@@ -1,0 +1,23 @@
+{
+  "name": "spoil-wordle",
+  "version": "1.0.2",
+  "description": "Returns the answer to today's wordle. Time is specified by the system the package runs on. To get tomorrow's wordle, pass 1 as a parameter. To get the day after tomorrow's wordle, pass 2, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garbagefactory/spoil-wordle.git"
+  },
+  "keywords": [
+    "wordle",
+    "spoil"
+  ],
+  "author": "Dexo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garbagefactory/spoil-wordle/issues"
+  },
+  "homepage": "https://github.com/garbagefactory/spoil-wordle#readme"
+}
