@@ -4,7 +4,8 @@
 
 A.K.A. the
 
-<font face="Geneva" size=7>_"Schadenfreude Backend"_</font>
+<font face="Geneva" size=10>_"Schadenfreude Backend"_</font>
+
 
 Spoils wordle. The perfect ICBM to your enemy, who just so happens to like Wordle.
 Implement it into your apps, bots, etc., to get the answer to today's Wordle or days after.
@@ -14,6 +15,8 @@ This package will work for ~2000 days, assuming the wordle answers won't change.
 May forget though, go ahead and message me when it happens.
 
 This readme contains the wordle answer for the 24th of March, 2022.
+
+[npm package](https://www.npmjs.com/package/spoil-wordle)
 
 ## Installation
 
