@@ -4,8 +4,7 @@
 
 A.K.A. the
 
-<font face="Geneva" size=10>_"Schadenfreude Backend"_</font>
-
+# _"Schadenfreude Backend"_
 
 Spoils wordle. The perfect ICBM to your enemy, who just so happens to like Wordle.
 Implement it into your apps, bots, etc., to get the answer to today's Wordle or days after.
