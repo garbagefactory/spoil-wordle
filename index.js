@@ -1,21 +1,4 @@
-const wordles = [
-    "focus",
-    "smelt",
-    "tease",
-    "cater",
-    "movie",
-    "saute",
-    "allow",
-    "renew",
-    "their",
-    "slosh",
-    "purge",
-    "chest",
-    "depot",
-    "epoxy",
-    "nymph",
-    "found",
-    "shall",
+const wordles = ["shall",
     "harry",
     "stove",
     "lowly",
@@ -2050,30 +2033,24 @@ const wordles = [
 * @returns answer to the wordle
 */
 function spoilWordle(daysAfterToday) {
-    if (isNaN(daysAfterToday)) {
+    if (isNaN(daysAfterToday) && daysAfterToday) {
         console.error("Error calling spoilWordle() The parameter supplied needs to be a number, champ. \"" + daysAfterToday + "\" is not a number.")
     } else {
 
         // if daysAfterToday not supplied, assume today; 0
-        daysAfterToday = (!daysAfterToday) ? 0 : daysAfterToday
+        daysAfterToday ?? (daysAfterToday = 0)
 
         // if supplied daysAfterToday is not an integer, turn it into one; chop off the decimal Ex. 1.50 -> 1
         daysAfterToday = (Number.isInteger(daysAfterToday)) ? daysAfterToday : Math.floor(daysAfterToday)
 
-        //calculate the index of today's wordle using a linear function where x is the number of seconds since UNIX epoch.
-        //basically, the system's time goes in, the index of the wordle corresponding to that time comes out.
-        y = (1 / (82800) * ((86400 * daysAfterToday) + Math.round(Date.now() / 1000))) - (19893.08695652174)
-        //Hey, reader, be impressed. No database required. No complicated array/hashmap garbage. This is constant time!!!
-        //Your math teacher was right, you will need math in your every day life, 
-        //like when you want to ruin people's day by spoiling wordle.
-        //By the way this is why I love coding, I can just blog in a stupid package very little people will use and nobody can stop me.
-        //One person is gonna see this and probably laugh. 
+        x = Math.round(Date.now() / 1000) + (daysAfterToday * 86400)
+
+        y = (x / 86400) - (114481 / 6)
 
         //return the word of the day supplied.
         return (wordles[Math.floor(y)])
     }
 
 }
-
 module.exports = { spoilWordle, wordles }
 
