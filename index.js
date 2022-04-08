@@ -1,5 +1,4 @@
 const wordles = ["shall",
-    "harry",
     "stove",
     "lowly",
     "snout",
@@ -2032,13 +2031,10 @@ const wordles = ["shall",
 * 
 * @returns answer to the wordle
 */
-function spoilWordle(daysAfterToday) {
+function spoilWordle(daysAfterToday = 0) {
     if (isNaN(daysAfterToday) && daysAfterToday) {
         console.error("Error calling spoilWordle() The parameter supplied needs to be a number, champ. \"" + daysAfterToday + "\" is not a number.")
     } else {
-
-        // if daysAfterToday not supplied, assume today; 0
-        daysAfterToday ?? (daysAfterToday = 0)
 
         // if supplied daysAfterToday is not an integer, turn it into one; chop off the decimal Ex. 1.50 -> 1
         daysAfterToday = (Number.isInteger(daysAfterToday)) ? daysAfterToday : Math.floor(daysAfterToday)
@@ -2052,5 +2048,5 @@ function spoilWordle(daysAfterToday) {
     }
 
 }
-module.exports = { spoilWordle, wordles }
 
+module.exports = { spoilWordle, wordles }
