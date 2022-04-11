@@ -68,6 +68,7 @@ If no variable is specified, the function will return today's wordle.
 
 ---
 
+
 Module contains a single property, a `wordles` array. This is every wordle answer since 2022-03-13.
 Ex.
 
