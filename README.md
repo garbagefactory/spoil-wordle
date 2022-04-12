@@ -13,8 +13,6 @@ This package will work for ~2000 days, assuming the wordle answers won't change.
 
 May forget though, go ahead and message me when it happens.
 
-This readme contains the wordle answer for the 24th of March, 2022.
-
 [npm package](https://www.npmjs.com/package/spoil-wordle)
 
 ## Installation
@@ -80,6 +78,6 @@ const { wordles } = require("spoil-wordle");
 const wordle = require("spoil-wordle");
 const wordles2 = wordle.wordles;
 
-console.log(wordles[10]); // purge
-console.log(wordles2[10]); // purge
+console.log(wordles[10]);
+console.log(wordles2[10]); 
 ```
