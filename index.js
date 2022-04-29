@@ -29,7 +29,6 @@ const wordles = ["shall",
     "heist",
     "shown",
     "zesty",
-    "hasty",
     "trash",
     "fella",
     "larva",
@@ -2038,7 +2037,6 @@ function spoilWordle(daysAfterToday = 0) {
 
         // if supplied daysAfterToday is not an integer, turn it into one; chop off the decimal Ex. 1.50 -> 1
         daysAfterToday = (Number.isInteger(daysAfterToday)) ? daysAfterToday : Math.floor(daysAfterToday)
-
         x = Math.round(Date.now() / 1000) + (daysAfterToday * 86400)
 
         y = (x / 86400) - (114481 / 6)
