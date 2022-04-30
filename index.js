@@ -2033,17 +2033,17 @@ const wordles = ["shall",
 function spoilWordle(daysAfterToday = 0) {
     if (isNaN(daysAfterToday) && daysAfterToday) {
         console.error("Error calling spoilWordle() The parameter supplied needs to be a number, champ. \"" + daysAfterToday + "\" is not a number.")
-    } else {
-
-        // if supplied daysAfterToday is not an integer, turn it into one; chop off the decimal Ex. 1.50 -> 1
-        daysAfterToday = (Number.isInteger(daysAfterToday)) ? daysAfterToday : Math.floor(daysAfterToday)
-        x = Math.round(Date.now() / 1000) + (daysAfterToday * 86400)
-
-        y = (x / 86400) - (114481 / 6)
-
-        //return the word of the day supplied.
-        return (wordles[Math.floor(y)])
+        return
     }
+
+    // if supplied daysAfterToday is not an integer, turn it into one; chop off the decimal Ex. 1.50 -> 1
+    daysAfterToday = (Number.isInteger(daysAfterToday)) ? daysAfterToday : Math.floor(daysAfterToday)
+    x = Math.round(Date.now() / 1000) + (daysAfterToday * 86400)
+
+    y = (x / 86400) - (114481 / 6)
+
+    //return the word of the day supplied.
+    return (wordles[Math.floor(y)])
 
 }
 

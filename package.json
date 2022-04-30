@@ -1,6 +1,6 @@
 {
   "name": "spoil-wordle",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Returns the answer to today's wordle. Time is specified by the system the package runs on. To get tomorrow's wordle, pass 1 as a parameter. To get the day after tomorrow's wordle, pass 2, etc.",
   "main": "index.js",
   "scripts": {
