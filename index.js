@@ -1,4 +1,4 @@
-const wordles = ["shall",
+const wordles = [
     "stove",
     "lowly",
     "snout",
@@ -2046,5 +2046,6 @@ function spoilWordle(daysAfterToday = 0) {
     return (wordles[Math.floor(y)])
 
 }
+
 
 module.exports = { spoilWordle, wordles }
